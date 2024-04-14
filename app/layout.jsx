@@ -1,5 +1,5 @@
-import '@/styles/globals.css'
-
+import "@/styles/globals.css"
+import Nav from "@/components/Nav.jsx"
 export const metadata = {
   tilte: "Promptopia",
   description: "Discover & Share AI Prompts"
@@ -13,6 +13,7 @@ const layout = ({children}) => {
           <div className='gradient'/>
         </div>
         <main className='app'>
+        <Nav/>
           {children}
         </main>
       </body>
