@@ -6,17 +6,18 @@ import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 import '@/styles/globals.css';
 
 const Nav = () => {
-  const isUserLogin = true;
+  const {data : session} = useSession();
   const [providers, setProviders] = useState(null);
   const [toggleDropDown, settoggleDropDown] = useState(false);
 
-  // useEffect(() => {
-  //   const setProviders = async()=>{
-  //     const response = await getProviders();
-  //     setProviders(response);
-  //   }
-  //   setProviders(); 
-  // }, [])
+  useEffect(() => {
+    const setUpProviders = async () => {
+      const response = await getProviders();
+      setProviders(response);
+    }
+    setUpProviders(); 
+  }, [])
+
   return (
     <nav className="flex-between w-full mb-16 pt-3">
       <Link href="/" className="flex gap-2 flex-center">
@@ -30,9 +31,11 @@ const Nav = () => {
         <p className="logo_text">Promptopia</p>
       </Link>
 
+{alert(providers)}
+
       {/* For Desktop Navigation */}
       <div className="sm:flex hidden">
-        {isUserLogin ? (
+        {session?.user ? (
           <div className="flex gap-3 md:gap-5">
             <Link href="/createPrompt" className="black_btn">
               Create Post
@@ -60,6 +63,7 @@ const Nav = () => {
                   type="button" 
                   key={provider.name} 
                   className="black_btn"
+                  onClick={() => signIn(provider.id)}
                 >Sign In</button>
               })
             }
@@ -68,7 +72,7 @@ const Nav = () => {
       </div>
       {/* Mobile Navigation */}
       <div className="sm:hidden flex relative">
-        {isUserLogin ? (
+        {session?.user ? (
           <div className="flex">
             <Image
               src="/assets/images/logo.svg"
@@ -113,6 +117,7 @@ const Nav = () => {
                   type="button" 
                   key={provider.name} 
                   className="black_btn"
+                  onClick={() => signIn(provider.id)}
                 >Sign In</button>
               })
             }
