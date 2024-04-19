@@ -31,8 +31,6 @@ const Nav = () => {
         <p className="logo_text">Promptopia</p>
       </Link>
 
-{alert(providers)}
-
       {/* For Desktop Navigation */}
       <div className="sm:flex hidden">
         {session?.user ? (
@@ -58,14 +56,14 @@ const Nav = () => {
         ):(
           <>
             {providers && 
-              Object.values(providers).map((provider)=>{
+              Object.values(providers).map((provider)=>
                 <button 
                   type="button" 
                   key={provider.name} 
                   className="black_btn"
                   onClick={() => signIn(provider.id)}
                 >Sign In</button>
-              })
+              )
             }
           </>
         )}
@@ -112,14 +110,14 @@ const Nav = () => {
         ):(
          <>
             {providers && 
-              Object.values(providers).map((provider)=>{
+              Object.values(providers).map((provider)=>
                 <button 
                   type="button" 
                   key={provider.name} 
                   className="black_btn"
                   onClick={() => signIn(provider.id)}
                 >Sign In</button>
-              })
+              )
             }
           </>
         )}
