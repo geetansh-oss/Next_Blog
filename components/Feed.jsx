@@ -1,8 +1,12 @@
-import React from 'react'
+"use client"
+
+import {useState,useEffect} from 'react'
 
 const Feed = () => {
   return (
-    <div>Feed</div>
+    <div className='flex'>
+      
+    </div>
   )
 }
 

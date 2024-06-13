@@ -6,4 +6,4 @@ const PromptCard = () => {
   )
 }
 
-export default PromptCard
+export default PromptCard;
