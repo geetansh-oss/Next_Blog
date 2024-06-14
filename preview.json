@@ -1,0 +1,41 @@
+[
+  {
+    "_id": "666a49fce309aa1943ea368b",
+    "creator": {
+      "_id": "6622c93430f64bb64327f295",
+      "email": "geetansh335@gmail.com",
+      "username": "geetanshrahangdale",
+      "image": "https://lh3.googleusercontent.com/a/ACg8ocJAdgNg1tJdHExlPLguYFFyTIRJQ7ZSjw7iS3gYNkZaZroqzE0=s96-c",
+      "__v": 0
+    },
+    "prompt": "Create me 100 sets of marketing facts in the same style as the below examples, and format them in a table where one column is the topic, one column is the part 1 and one column is the part 2. Do not repeat any facts. These should be social media, email marketing, SEO and Instagram or any digital marketing facts and more. They'll be formatted as a topic or type of fact, part 1 and then part 2. Keep the facts engaging, polarizing, over the top and relatable to everyone or people in particular situations. The reading grade should be under grade 7 ideally.\n",
+    "tag": "#idea #reelidea",
+    "__v": 0
+  },
+  {
+    "_id": "666a4fb0e309aa1943ea3696",
+    "creator": {
+      "_id": "6622c93430f64bb64327f295",
+      "email": "geetansh335@gmail.com",
+      "username": "geetanshrahangdale",
+      "image": "https://lh3.googleusercontent.com/a/ACg8ocJAdgNg1tJdHExlPLguYFFyTIRJQ7ZSjw7iS3gYNkZaZroqzE0=s96-c",
+      "__v": 0
+    },
+    "prompt": "create a chrome extension which can summarize YouTube videos.",
+    "tag": "#webDev #chromeExtension",
+    "__v": 0
+  },
+  {
+    "_id": "666a501ce309aa1943ea369b",
+    "creator": {
+      "_id": "6622c93430f64bb64327f295",
+      "email": "geetansh335@gmail.com",
+      "username": "geetanshrahangdale",
+      "image": "https://lh3.googleusercontent.com/a/ACg8ocJAdgNg1tJdHExlPLguYFFyTIRJQ7ZSjw7iS3gYNkZaZroqzE0=s96-c",
+      "__v": 0
+    },
+    "prompt": "Imagine you wake up one morning to find that you have the ability to time travel, but with a catch: you can only travel to moments in your own past. How would you use this newfound power? Would you relive your happiest memories, correct past mistakes, or explore significant historical events from your perspective? Describe your first journey, the emotions you experience, and the impact it has on your present life.",
+    "tag": "#idea #life",
+    "__v": 0
+  }
+]
