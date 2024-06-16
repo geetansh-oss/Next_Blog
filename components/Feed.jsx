@@ -32,7 +32,7 @@ const Feed = () => {
     }
     fetchPosts();
   }, []);
-  console.log(posts);
+ 
   return (
     <section className='flex flex-col'>
       <form className='relative w-full flex-center'>
